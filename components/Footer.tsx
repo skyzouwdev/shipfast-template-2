@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import config from "@/config";
-import logo from "@/app/icon.png";
 
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
@@ -19,7 +18,7 @@ const Footer = () => {
               className="flex gap-2 justify-center md:justify-start items-center"
             >
               <Image
-                src={logo}
+                src={"/icon.svg"}
                 alt={`${config.appName} logo`}
                 priority={true}
                 className="w-6 h-6"
@@ -32,10 +31,12 @@ const Footer = () => {
             </Link>
 
             <p className="mt-3 text-sm text-base-content/80">
-              {config.appDescription}
+              {
+                "TradeFast is an trading community where you can learn with others and have many functionalities"
+              }
             </p>
             <p className="mt-3 text-sm text-base-content/60">
-              Copyright © {new Date().getFullYear()} - Todos os direitos reservados
+              Copyright © {new Date().getFullYear()} - Tout les droits
             </p>
           </div>
           <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center">
@@ -52,11 +53,11 @@ const Footer = () => {
                     className="link link-hover"
                     aria-label="Contact Support"
                   >
-                    Suporte
+                    Support
                   </a>
                 )}
                 <Link href="/#pricing" className="link link-hover">
-                  Preços
+                  Pricing
                 </Link>
               </div>
             </div>
@@ -68,10 +69,10 @@ const Footer = () => {
 
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
                 <Link href="/tos" className="link link-hover">
-                  Termos de Serviços
+                  Terms de services
                 </Link>
                 <Link href="/privacy-policy" className="link link-hover">
-                  Política de Privacidade
+                  Politiques privées
                 </Link>
               </div>
             </div>

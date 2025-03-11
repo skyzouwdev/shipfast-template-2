@@ -1,19 +1,23 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-
+import WithWithout from "@/components/WithWithout";
+import Testimonials11 from "@/components/Testimonials11";
+import Pricing from "@/components/Pricing1";
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
-        <Hero />
+        <div className="flex space-y-20">
+          <Header />
+          <Hero />
+        </div>
+        <WithWithout />
+        <Testimonials11></Testimonials11>
         <Pricing />
         <FAQ />
-        <CTA />
       </main>
       <Footer />
     </>

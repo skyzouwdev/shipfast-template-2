@@ -3,8 +3,8 @@
 import { useRef, useState } from "react";
 import type { JSX } from "react";
 
-// <FAQ> component is a lsit of <Item> component
-// Just import the FAQ & add your FAQ content to the const faqList arrayy below.
+// <FAQ> component is a list of <Item> component
+// Just import the FAQ & add your FAQ content to the const faqList array below.
 
 interface FAQItemProps {
   question: string;
@@ -13,21 +13,25 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "Como eu posso adquirir o Pump?",
-    answer: <div className="space-y-2 leading-relaxed">Você pode adquirir o Pump através de planos, e cada plano terá um valor. Só existe uma única forma de pagamento: cartão de crédito.</div>,
-  },
-  {
-    question: "Posso obter um reembolso?",
+    question: "What do I get exactly?",
     answer: (
-      <p>
-        Sim! Você pode solicitar um reembolso no prazo de 7 dias após a compra. Contate-nos por email.
-      </p>
+      <div className="space-y-2 leading-relaxed">
+        You get daily signals, the best community where you can talk with a lot
+        of good traders, you get to talk with me and ask me questions, get daily
+        streams, and education.
+      </div>
     ),
   },
   {
-    question: "Eu tenho outra pergunta",
+    question: "Can I stop my subscription?",
+    answer: <p>Yes, you can stop your subscription at any time.</p>,
+  },
+  {
+    question: "I have another question",
     answer: (
-      <div className="space-y-2 leading-relaxed">Legal, contate-nos pelo email.</div>
+      <div className="space-y-2 leading-relaxed">
+        Cool, contact us by email.
+      </div>
     ),
   },
 ];
@@ -37,7 +41,7 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <li>
+    <li className="w-full">
       <button
         className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
         onClick={(e) => {
@@ -48,6 +52,7 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
       >
         <span
           className={`flex-1 text-base-content ${isOpen ? "text-primary" : ""}`}
+          style={{ fontSize: "16px" }} // Applique une taille uniforme
         >
           {item?.question}
         </span>
@@ -61,16 +66,18 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
             width="16"
             height="2"
             rx="1"
-            className={`transform origin-center transition duration-200 ease-out ${isOpen && "rotate-180"
-              }`}
+            className={`transform origin-center transition duration-200 ease-out ${
+              isOpen && "rotate-180"
+            }`}
           />
           <rect
             y="7"
             width="16"
             height="2"
             rx="1"
-            className={`transform origin-center rotate-90 transition duration-200 ease-out ${isOpen && "rotate-180 hidden"
-              }`}
+            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+              isOpen && "rotate-180 hidden"
+            }`}
           />
         </svg>
       </button>
@@ -92,18 +99,17 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-base-200" id="faq">
-      <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
-        <div className="flex flex-col text-left basis-1/2">
+    <section className="bg-base-100" id="faq">
+      <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col gap-12 justify-center items-center">
+        <div className="flex flex-col text-center">
           <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
-            Perguntas frequentes
+            Frequently Asked Questions
           </p>
         </div>
-
-        <ul className="basis-1/2">
+        <ul className="w-full flex flex-col items-center">
           {faqList.map((item, i) => (
-            <FaqItem key={i} item={item} />
+            <FaqItem key={i} item={item} className="w-full" />
           ))}
         </ul>
       </div>
