@@ -5,7 +5,6 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Link from "next/link";
 
 import apiClient from "@/libs/api";
-import config from "@/config";
 
 import Modal from "./Modal";
 

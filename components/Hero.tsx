@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+
+// Composants locaux
 import TestimonialsAvatars from "./TestimonialsAvatars";
 const Hero = () => {
   return (

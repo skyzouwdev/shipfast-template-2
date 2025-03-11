@@ -1,5 +1,3 @@
-import config from "@/config";
-
 import ButtonCheckout from "./ButtonCheckout";
 
 // <Pricing/> displays the pricing plans for your app

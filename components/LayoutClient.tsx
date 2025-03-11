@@ -41,7 +41,7 @@ const CrispChat = (): null => {
       // Use <AppButtonSupport> instead to show it (user clicks on the button to show Crisp—it cleans the UI)
       if (
         config.crisp.onlyShowOnRoutes &&
-        !config.crisp.onlyShowOnRoutes?.includes(pathname)
+        !config.crisp.onlyShowOnRoutes.includes(pathname)
       ) {
         Crisp.chat.hide();
         Crisp.chat.onChatClosed(() => {
@@ -54,7 +54,7 @@ const CrispChat = (): null => {
   // Add User Unique ID to Crisp to easily identify users when reaching support (optional)
   useEffect(() => {
     if (data?.user && config?.crisp?.id) {
-      Crisp.session.setData({ userId: data.user?.id });
+      Crisp.session.setData({ userId: data.user.id });
     }
   }, [data]);
 
