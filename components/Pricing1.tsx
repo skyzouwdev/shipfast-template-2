@@ -19,7 +19,7 @@ const Pricing = () => {
 
         <div className="relative flex justify-center flex-col lg:flex-row items-center lg:items-stretch gap-8 w-full">
           {/* Premier plan : Formation */}
-          <div className="relative w-full lg:w-1/3">
+          <div className="relative w-full lg:w-1/3 overflow-visible">
             {" "}
             {/* Utilisation de w-full pour maximiser la largeur */}
             <div className="relative flex flex-col h-full gap-5 lg:gap-8 z-10 bg-base-100 p-12 rounded-2xl">
@@ -87,8 +87,10 @@ const Pricing = () => {
                   </li>
                 </ul>
               </div>
-              <div className="space-y-2 flex flex-col items-center justify-center">
-                <ButtonCheckout />
+              <div className="space-y-2 flex flex-col items-center justify-center text-center">
+                <div className="w-full flex justify-center">
+                  <ButtonCheckout className="min-w-[200px]" />
+                </div>
                 <div className="text-center text-sm opacity-90">
                   Pay once. Access forever.
                 </div>
@@ -97,7 +99,7 @@ const Pricing = () => {
           </div>
 
           {/* Deuxième plan : Mentorship */}
-          <div className="relative w-full lg:w-1/3 border-4 border-primary">
+          <div className="relative w-full lg:w-1/3 border-4 border-primary overflow-visible">
             {" "}
             {/* Utilisation de w-full pour maximiser la largeur */}
             <div className="relative flex flex-col h-full gap-5 lg:gap-8 z-10 bg-base-100 p-12 rounded-2xl">
@@ -186,8 +188,10 @@ const Pricing = () => {
                   </li>
                 </ul>
               </div>
-              <div className="space-y-2 flex flex-col items-center justify-center">
-                <ButtonCheckout />
+              <div className="space-y-2 flex flex-col items-center justify-center text-center">
+                <div className="w-full flex justify-center">
+                  <ButtonCheckout className="min-w-[200px]" />
+                </div>
                 <div className="text-center text-sm opacity-90">
                   Pay monthly. Access forever.
                 </div>
@@ -196,7 +200,7 @@ const Pricing = () => {
           </div>
 
           {/* Troisième plan : 1on1 calls */}
-          <div className="relative w-full lg:w-1/3">
+          <div className="relative w-full lg:w-1/3 overflow-visible">
             {" "}
             {/* Utilisation de w-full pour maximiser la largeur */}
             <div className="relative flex flex-col h-full gap-5 lg:gap-8 z-10 bg-base-100 p-12 rounded-2xl">
@@ -264,8 +268,10 @@ const Pricing = () => {
                   </li>
                 </ul>
               </div>
-              <div className="space-y-2 flex flex-col items-center justify-center">
-                <ButtonCheckout />
+              <div className="space-y-2 flex flex-col items-center justify-center text-center">
+                <div className="w-full flex justify-center">
+                  <ButtonCheckout className="min-w-[200px]" />
+                </div>
                 <div className="text-center text-sm opacity-90">
                   Pay per hour. Access forever.
                 </div>

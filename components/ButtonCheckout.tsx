@@ -15,9 +15,11 @@ const IS_PRODUCTION = process.env.NODE_ENV === "production";
 const ButtonCheckout = ({
   priceId,
   mode = "payment",
+  className = "",
 }: {
   priceId?: string;
   mode?: "payment" | "subscription";
+  className?: string;
 }) => {
   const supabase = createClientComponentClient();
 
@@ -73,7 +75,7 @@ const ButtonCheckout = ({
       </Modal>
 
       <button
-        className="bg-black text-white hover:bg-gray-800 w-full mr-4 rounded-full px-6 py-2"
+        className={`bg-black text-white hover:bg-gray-800 w-full mr-4 rounded-full px-6 py-2 ${className}`}
         onClick={IS_PRODUCTION ? () => null : () => handlePayment()}
         disabled={IS_PRODUCTION ? true : false}
       >
