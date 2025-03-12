@@ -6,23 +6,23 @@ const avatars: {
 }[] = [
   {
     alt: "User 1",
-    src: "/public/user1.png",
+    src: "/user1.png", // Correction
   },
   {
     alt: "User 2",
-    src: "/public/user2.png",
+    src: "/user2.png", // Correction
   },
   {
     alt: "User 3",
-    src: "/public/user3.png",
+    src: "/user3.png", // Correction
   },
   {
     alt: "User 4",
-    src: "/public/user4.png",
+    src: "/user4.png", // Correction
   },
   {
     alt: "User 5",
-    src: "/public/user5.png",
+    src: "/user5.png", // Correction
   },
 ];
 
