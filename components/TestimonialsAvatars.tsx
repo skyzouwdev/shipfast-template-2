@@ -6,23 +6,23 @@ const avatars: {
 }[] = [
   {
     alt: "User 1",
-    src: "/user1.png",
+    src: "/public/user1.png",
   },
   {
     alt: "User 2",
-    src: "/user2.png",
+    src: "/public/user2.png",
   },
   {
     alt: "User 3",
-    src: "/user3.png",
+    src: "/public/user3.png",
   },
   {
     alt: "User 4",
-    src: "/user4.png",
+    src: "/public/user4.png",
   },
   {
     alt: "User 5",
-    src: "/user5.png",
+    src: "/public/user5.png",
   },
 ];
 
@@ -33,13 +33,7 @@ const TestimonialsAvatars = ({ priority }: { priority?: boolean }) => {
       <div className={`-space-x-5 avatar-group justy-start`}>
         {avatars.map((image, i) => (
           <div className="avatar w-12 h-12" key={i}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              priority={priority}
-              width={50}
-              height={50}
-            />
+            <img src={image.src} alt={image.alt} width={50} height={50} />
           </div>
         ))}
       </div>
