@@ -1,19 +1,20 @@
 "use client";
 
-import React from "react";
+// Group 1: Imports externes
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
+// Group 2: Imports locaux
 import Link from "next/link";
 import Image from "next/image";
-import Redirect from "./Redirect";
+import Redirect from "./Redirect"; // Import du composant Redirect
 
 // Logo path
 const logo = "/icon.svg";
 
 const links = [
   {
-    href: "/#testimonials-section", // Mise à jour du lien vers le bon id
+    href: "/#testimonials-section",
     label: "Review",
   },
   {
@@ -25,8 +26,6 @@ const links = [
     label: "FAQ",
   },
 ];
-
-const cta: JSX.Element = <Redirect />;
 
 const Header = () => {
   const searchParams = useSearchParams();
@@ -53,18 +52,18 @@ const Header = () => {
       } mb-8`}
     >
       <nav
-        className="container flex items-center justify-between px-8 py-4 mx-auto"
+        className="container flex justify-between items-center px-8 py-4 mx-auto"
         aria-label="Global"
       >
         {/* Logo */}
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 justify-start">
           <Link
             className="flex items-center gap-2 shrink-0"
             href="/"
             title={`TradeFast homepage`}
           >
             <Image
-              src={logo} // Affichage du logo
+              src={logo}
               alt={`TradeFast logo`}
               className="w-8"
               width={32}
@@ -74,33 +73,8 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Burger button on mobile */}
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-            onClick={() => setIsOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
-        </div>
-
-        {/* Links */}
-        <div className="hidden lg:flex lg:justify-center lg:gap-12 lg:items-center">
+        {/* Links on desktop */}
+        <div className="hidden lg:flex justify-center gap-12 items-center flex-grow w-full">
           {links.map((link) => (
             <Link
               href={link.href}
@@ -113,14 +87,34 @@ const Header = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="hidden lg:flex lg:justify-end lg:items-end lg:flex-1">
-          {cta}
+        {/* Mobile menu button */}
+        <button
+          className="lg:hidden text-gray-700"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span className="sr-only">Open menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="gray"
+            className="w-6 h-6"
+          >
+            <path
+              fillRule="evenodd"
+              d="M2 6.75A.75.75 0 0 1 2.75 6h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 6.75Zm0 6.5a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+
+        {/* Redirect component */}
+        <div className="hidden lg:flex justify-end items-center">
+          <Redirect /> {/* Insertion du composant Redirect ici */}
         </div>
       </nav>
 
       {/* Mobile menu */}
-      <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
+      {isOpen && (
         <div
           className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-4 overflow-y-auto sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300 bg-white`}
         >
@@ -163,7 +157,7 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Links and CTA on mobile */}
+          {/* Links on mobile */}
           <div className="flow-root mt-6">
             <div className="py-4">
               <div className="flex flex-col gap-y-4 items-start">
@@ -178,12 +172,14 @@ const Header = () => {
                   </Link>
                 ))}
               </div>
+              {/* Ajout du bouton Redirect sous les liens */}
+              <div className="mt-6">
+                <Redirect /> {/* Insertion du composant Redirect ici */}
+              </div>
             </div>
-            <div className="divider"></div>
-            <div className="flex flex-col">{cta}</div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };

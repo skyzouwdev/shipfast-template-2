@@ -16,7 +16,7 @@ const WithWithout = () => {
           <ul className="text-[#FF8B8B] space-y-8 text-left w-full text-center h-full flex flex-col justify-between">
             <li className="text-sm md:text-base">✗ Lack of consistency</li>
             <li className="text-sm md:text-base">✗ Strategy Hopping </li>
-            <li className="text-sm md:text-base">✗ Don't have an edge </li>
+            <li className="text-sm md:text-base">✗ Don&apos;t have an edge </li>
             <li className="text-sm md:text-base">✗ Losing money </li>
             <li className="text-sm md:text-base">✗ Quitting trading</li>
           </ul>
