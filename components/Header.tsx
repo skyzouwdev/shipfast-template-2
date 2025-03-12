@@ -1,7 +1,7 @@
 "use client";
 
 // Group 1: Imports externes
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 // Group 2: Imports locaux
@@ -184,4 +184,12 @@ const Header = () => {
   );
 };
 
-export default Header;
+const HeaderWrapper = () => {
+  return (
+    <Suspense fallback={<div>Loading header...</div>}>
+      <Header />
+    </Suspense>
+  );
+};
+
+export default HeaderWrapper;

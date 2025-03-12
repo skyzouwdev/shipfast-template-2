@@ -1,13 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "extends": ["next/core-web-vitals"],
   "env": {
     "browser": true,
     "node": true,
     "es6": true
   },
-  "plugins": ["import"],
+  "plugins": ["import", "@typescript-eslint"],
   "rules": {
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "import/order": "off",
     "react/no-unescaped-entities": "off",
     "react/prop-types": "off",

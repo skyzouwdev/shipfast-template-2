@@ -16,7 +16,7 @@ const ButtonCheckout = ({
   priceId,
   mode = "payment",
 }: {
-  priceId: string;
+  priceId?: string;
   mode?: "payment" | "subscription";
 }) => {
   const supabase = createClientComponentClient();

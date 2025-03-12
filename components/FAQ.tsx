@@ -109,7 +109,7 @@ const FAQ = () => {
         </div>
         <ul className="w-full flex flex-col items-center">
           {faqList.map((item, i) => (
-            <FaqItem key={i} item={item} className="w-full" />
+            <FaqItem key={i} item={item} />
           ))}
         </ul>
       </div>

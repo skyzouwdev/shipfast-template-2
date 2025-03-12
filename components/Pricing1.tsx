@@ -1,3 +1,4 @@
+"use client";
 import ButtonCheckout from "./ButtonCheckout";
 
 // <Pricing/> displays the pricing plans for your app
