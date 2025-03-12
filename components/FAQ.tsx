@@ -18,7 +18,7 @@ const faqList: FAQItemProps[] = [
       <div className="space-y-2 leading-relaxed">
         You get daily signals, the best community where you can talk with a lot
         of good traders, you get to talk with me and ask me questions, get daily
-        streams, and education.
+        streams, and education zeub.
       </div>
     ),
   },
