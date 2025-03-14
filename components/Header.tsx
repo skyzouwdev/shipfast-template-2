@@ -25,6 +25,10 @@ const links = [
     href: "/#faq",
     label: "FAQ",
   },
+  {
+    href: "/#affiliation",
+    label: "Affiliation",
+  },
 ];
 
 const Header = () => {

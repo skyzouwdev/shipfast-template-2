@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import WithWithout from "@/components/WithWithout";
 import Testimonials11 from "@/components/Testimonials11";
 import Pricing from "@/components/Pricing1";
-
+import Affiliation from "@/components/Affiliation";
 export default function Home() {
   return (
     <>
@@ -25,6 +25,7 @@ export default function Home() {
         <Suspense fallback={<div>Loading FAQ...</div>}>
           <FAQ />
         </Suspense>
+        <Affiliation />
       </main>
       <Footer />
     </>

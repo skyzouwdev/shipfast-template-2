@@ -8,6 +8,18 @@ const Hero = () => {
     <section className="max-w-7xl mx-auto bg-base-100 flex items-center justify-center flex-col gap-10 lg:gap-14 px-8 py-8 lg:py-20">
       <div className="flex flex-col items-center justify-center text-center gap-20 lg:gap-24">
         <div className="flex flex-col items-center gap-16">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/skyz.png"
+              alt="Skyzouw Logo"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <span className="text-sm font-medium text-gray-600">
+              By Skyzouw
+            </span>
+          </div>
           <h1 className="font-extrabold text-5xl lg:text-6xl tracking-tight md:-mb-4">
             Learn to trade{" "}
             <span className="relative inline-block">
@@ -32,18 +44,29 @@ const Hero = () => {
           </Link>
           <TestimonialsAvatars />
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-y-1">
           <div className="text-center font-bold text-3xl lg:text-4xl">
-            Join The Best Community
+            Join The Best Trading Group
           </div>
-          <div className="flex flex-col gap-3 lg:gap-5 items-center">
-            <Image
-              src="/Screen.png"
-              alt="Screen showing trading platform"
-              width={1000}
-              height={700}
-              className="mx-auto"
-            />
+          <div className="flex flex-row gap-3 lg:gap-5 items-center">
+            <div className="w-1/2">
+              <Image
+                src="/a.png"
+                alt="Screen showing trading platform"
+                width={500}
+                height={350}
+                className="mx-auto"
+              />
+            </div>
+            <div className="w-1/2">
+              <Image
+                src="/b.png"
+                alt="Another screen showing trading platform"
+                width={500}
+                height={350}
+                className="mx-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
