@@ -109,6 +109,7 @@ const config = {
     // REQUIRED — the path you want to redirect users after successfull login (i.e. /dashboard, /private). This is normally a private page for users to manage their accounts. It's used in apiClient (/libs/api.js) upon 401 errors from our API & in ButtonSignIn.js
     callbackUrl: "/home",
   },
+  logo: "/icon.svg", // Ajoutez cette ligne pour spécifier le chemin de votre logo
 } as ConfigProps;
 
 export default config;
