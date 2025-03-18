@@ -9,6 +9,10 @@ import WithWithout from "@/components/WithWithout";
 import Testimonials11 from "@/components/Testimonials11";
 import Pricing from "@/components/Pricing1";
 import Affiliation from "@/components/Affiliation";
+import FeaturesListicle from "@/components/FeaturesListicle";
+import DownloadSection from "@/components/Apple";
+import TestimonialRating from "@/components/TestimonialRating";
+import Testimonial from "@/components/Testimonials1";
 export default function Home() {
   return (
     <>
@@ -17,7 +21,11 @@ export default function Home() {
           <Header />
           <Hero />
         </div>
+        <Testimonial />
         <WithWithout />
+        <FeaturesListicle />
+        <TestimonialRating />
+        <DownloadSection />
         <Testimonials11 />
         <Suspense fallback={<div>Loading Pricing...</div>}>
           <Pricing />

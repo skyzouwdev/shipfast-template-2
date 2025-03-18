@@ -4,12 +4,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "TradeFast",
+  appName: "BetterLife",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Responsável por trazer soluções para o mundo de exercício físico auxiliando Personal Trainers.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "TradeFast",
+  domainName: "BetterLife",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",
@@ -109,7 +109,7 @@ const config = {
     // REQUIRED — the path you want to redirect users after successfull login (i.e. /dashboard, /private). This is normally a private page for users to manage their accounts. It's used in apiClient (/libs/api.js) upon 401 errors from our API & in ButtonSignIn.js
     callbackUrl: "/home",
   },
-  logo: "/icon.svg", // Ajoutez cette ligne pour spécifier le chemin de votre logo
+  logo: "/sport.png", // Mise à jour du chemin pour utiliser le logo sport.png
 } as ConfigProps;
 
 export default config;

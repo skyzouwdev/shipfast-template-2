@@ -62,46 +62,46 @@ const list: {
   img?: string | StaticImageData;
 }[] = [
   {
-    username: "fasttrader",
-    name: "John Doe",
-    text: "TradeFast has revolutionized my trading. The platform is intuitive, and I can make trades faster than ever. It's a game changer for serious traders!",
+    username: "habitmaster",
+    name: "Emily Johnson",
+    text: "BetterLife completely changed my daily routine. Tracking my habits has never been this easy, and I finally feel in control of my progress!",
     type: refTypes.twitter,
-    link: "https://twitter.com/fasttrader",
-    img: "https://pbs.twimg.com/profile_images/1234567890/johndoe.jpg",
+    link: "https://twitter.com/habitmaster",
+    img: "https://pbs.twimg.com/profile_images/1234567890/emilyjohnson.jpg",
   },
   {
-    username: "speedytrader",
-    name: "Anna Smith",
-    text: "With TradeFast, I'm able to execute trades quickly and efficiently. The platform makes trading feel easy and accessible. Highly recommend it to anyone looking to boost their trading speed.",
+    username: "focusmode",
+    name: "Daniel Carter",
+    text: "With BetterLife, I stay consistent with my goals. The tracking system is intuitive and keeps me accountable every day!",
     type: refTypes.twitter,
-    link: "https://twitter.com/speedytrader",
+    link: "https://twitter.com/focusmode",
   },
   {
-    username: "quickinvestor",
-    name: "Michael Brown",
-    text: "I was struggling to keep up with the market, but TradeFast has helped me execute trades much faster. I feel more confident with my decisions now.",
+    username: "growthseeker",
+    name: "Sophia Lee",
+    text: "I used to struggle with staying motivated, but BetterLife’s habit tracking makes it so simple and rewarding.",
     type: refTypes.productHunt,
-    link: "https://www.producthunt.com/posts/tradefast",
+    link: "https://www.producthunt.com/posts/betterlife",
   },
   {
-    name: "James Lee",
-    text: "TradeFast is a great tool for anyone who wants to take their trading to the next level. It's simple, quick, and effective. I've seen a huge improvement in my trades!",
+    name: "James Wright",
+    text: "BetterLife helps me track everything from sleep to workouts. I love how easy it is to see my progress at a glance!",
     type: refTypes.other,
   },
   {
-    username: "fasttracktrader",
-    name: "Sophia Johnson",
-    text: "I’ve used other platforms before, but nothing compares to TradeFast’s speed and ease of use. It’s truly designed with traders in mind.",
+    username: "dailygrind",
+    name: "Olivia Brown",
+    text: "I've tried other habit trackers, but nothing compares to BetterLife’s simplicity and effectiveness.",
     type: refTypes.productHunt,
-    link: "https://www.producthunt.com/posts/tradefast",
+    link: "https://www.producthunt.com/posts/betterlife",
   },
   {
-    username: "marketpro",
-    name: "David Miller",
-    text: "TradeFast has made a huge difference in how I trade. The speed at which I can execute trades is incredible, and it’s helped me become a more efficient trader overall.",
+    username: "routineking",
+    name: "Michael Smith",
+    text: "BetterLife keeps me on track and motivated. The habit tracking feature is exactly what I needed to stay disciplined!",
     type: refTypes.twitter,
-    link: "https://twitter.com/marketpro",
-    img: "https://pbs.twimg.com/profile_images/9876543210/davidmiller.jpg",
+    link: "https://twitter.com/routineking",
+    img: "https://pbs.twimg.com/profile_images/9876543210/michaelsmith.jpg",
   },
 ];
 
@@ -124,7 +124,7 @@ const Testimonial = ({ i }: { i: number }) => {
               </span>
             ) : i === 5 ? (
               <span className="w-10 h-10 rounded-full flex justify-center items-center text-lg font-medium bg-base-300">
-                D
+                M
               </span>
             ) : testimonial.img ? (
               <Image
@@ -179,12 +179,12 @@ const Testimonials11 = () => {
           <div className="mb-8">
             <p className="text-primary text-sm font-semibold">Review</p>
             <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
-              32 traders are already trading faster!
+              32 users are already building better habits!
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
-            Don&apos;t take our word for it. Here&apos;s what they have to say
-            about TradeFast.
+            Don't just take our word for it. See how BetterLife has helped users
+            stay on track and achieve their goals effortlessly.
           </p>
         </div>
 

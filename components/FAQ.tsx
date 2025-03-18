@@ -13,24 +13,50 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
+    question: "What is BetterLife?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        You get daily signals, the best community where you can talk with a lot
-        of good traders, you get to talk with me and ask me questions, get daily
-        streams, and education zeub.
+        BetterLife is an intuitive habit-tracking platform designed to help you
+        build strong routines, achieve your goals, and enhance your overall
+        well-being through simple daily tracking.
       </div>
     ),
   },
   {
-    question: "Can I stop my subscription?",
-    answer: <p>Yes, you can stop your subscription at any time.</p>,
-  },
-  {
-    question: "I have another question",
+    question: "What is the difference between the Monthly and Lifetime plan?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        Cool, contact us by email.
+        The Monthly plan gives you full access to all features with a flexible
+        monthly subscription. The Lifetime plan is a one-time payment providing
+        unlimited lifetime access, offering the best long-term value.
+      </div>
+    ),
+  },
+  {
+    question: "Is there an iOS/Android app?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Yes! BetterLife is fully accessible on both iOS and Android devices,
+        allowing you to track your routines effortlessly wherever you are.
+      </div>
+    ),
+  },
+  {
+    question: "Can I cancel my subscription at any time?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Absolutely! You can easily cancel your monthly subscription whenever you
+        want, with no hidden fees or penalties.
+      </div>
+    ),
+  },
+  {
+    question: "Is my personal information safe on BetterLife?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Your privacy and security are our highest priority. BetterLife uses
+        advanced encryption and strict data-protection policies to ensure your
+        information is always safe and private.
       </div>
     ),
   },

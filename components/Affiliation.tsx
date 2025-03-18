@@ -7,14 +7,14 @@ const AffiliateSection = () => {
   const earnings = referrals * 50;
 
   return (
-    <div className="flex flex-col items-center p-8 bg-white shadow-md rounded-lg">
+    <div className="flex flex-col justify-center text-center items-center p-8 bg-base-100 shadow-md rounded-lg">
       <div className="w-full max-w-md">
         <Image
           src="/com.png"
           alt="Commission"
           width={900}
           height={900}
-          className="w-full h-auto md:w-3/4 lg:w-1/2"
+          className="w-full h-auto "
         />
       </div>
       <div className="text-center mt-8">
@@ -22,8 +22,8 @@ const AffiliateSection = () => {
           Earn ${earnings} today with commissions
         </h2>
         <p className="mt-4 text-gray-600">
-          When you refer a new student to Tradefast, you earn 50% of the current
-          price.
+          When you refer a new student to BetterLife, you earn 50% of the
+          current price.
         </p>
         <button className="btn btn-primary mt-6">Become an Affiliate</button>
       </div>
@@ -43,9 +43,6 @@ const AffiliateSection = () => {
           onChange={(e) => setReferrals(Number(e.target.value))}
           className="w-full mt-2 bg-base-100"
         />
-      </div>
-      <div className="mt-20">
-        <TestimonialRating />
       </div>
     </div>
   );
