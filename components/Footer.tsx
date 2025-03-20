@@ -18,7 +18,7 @@ const Footer = () => {
               className="flex gap-2 justify-center md:justify-start items-center"
             >
               <Image
-                src={"/sport.png"}
+                src={"/trade.png"}
                 alt={`${config.appName} logo`}
                 priority={true}
                 className="w-6 h-6"

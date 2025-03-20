@@ -1,84 +1,128 @@
 "use client";
 import { useState } from "react";
-import ButtonCheckout from "./ButtonCheckout";
+import Shit from "./Redirect";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-
   return (
     <section className="bg-base-200 overflow-hidden" id="pricing">
       <div className="py-24 px-8 w-full mx-auto flex flex-col items-center text-center">
         <p className="text-primary text-sm font-semibold">Pricing</p>
         <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-          Build better habits and take control of your life
+          Choose the plan that fits your trading journey
         </h2>
         <p className="text-base-content/80 mt-4 max-w-xl">
-          Gain access to the ultimate habit-tracking system. Stay consistent,
-          stay motivated, and achieve your goals effortlessly.
+          Gain access to structured trading education, live mentorship, and
+          personalized coaching to refine your skills and stay ahead of the
+          market.
         </p>
 
-        <div className="relative w-full max-w-lg mt-12">
-          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl">
+        <div className="relative w-full max-w-7xl mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-stretch mx-auto text-center">
+          {/* Education Plan */}
+          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl w-full md:w-3/4 lg:w-full max-w-lg h-full">
             <div className="flex flex-col items-center">
-              <p className="text-lg lg:text-xl font-bold">Membership</p>
+              <p className="text-lg lg:text-xl font-bold text-primary">
+                Education
+              </p>
               <p className="text-base-content/80 mt-2">
-                Get full access to all tracking features and insights.
+                Access 20+ hours of trading videos covering strategies, risk
+                management, and mindset training.
               </p>
             </div>
 
-            {/* Toggle button */}
-            <div className="flex items-center justify-center space-x-4">
-              <button
-                className={`px-4 py-2 rounded-lg font-semibold transition ${
-                  isMonthly ? "bg-primary text-white" : "bg-base-300"
-                }`}
-                onClick={() => setIsMonthly(true)}
-              >
-                Monthly
-              </button>
-              <button
-                className={`px-4 py-2 rounded-lg font-semibold transition ${
-                  !isMonthly ? "bg-primary text-white" : "bg-base-300"
-                }`}
-                onClick={() => setIsMonthly(false)}
-              >
-                Lifetime
-              </button>
-            </div>
-
-            {/* Pricing display */}
             <div className="text-center">
-              <p className="text-5xl tracking-tight font-extrabold">
-                {isMonthly ? "€10" : "€50"}
-              </p>
-              <p className="text-sm text-base-content/80">
-                {isMonthly ? "Per month" : "Lifetime access"}
-              </p>
+              <p className="text-5xl tracking-tight font-extrabold">€100</p>
+              <p className="text-sm text-base-content/80">Lifetime access</p>
             </div>
 
             <div className="space-y-2.5 leading-relaxed text-base">
               <ul className="flex flex-col space-y-4 text-left">
                 <li className="flex items-center gap-2">
-                  ✅ Unlimited habit tracking
+                  ✅ 20+ hours of structured content
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Personalized insights & reports
+                  ✅ Learn at your own pace
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Access to community & challenges
+                  ✅ Proven trading strategies
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ No ads, no distractions
+                  ✅ Risk management techniques
                 </li>
               </ul>
             </div>
+            <Shit />
+          </div>
 
-            <div className="space-y-2 flex flex-col items-center justify-center text-center w-full">
-              <ButtonCheckout className="min-w-[200px]" />
-              <div className="text-center text-sm opacity-90">
-                Choose your plan and start building strong habits today.
-              </div>
+          {/* Mentorship Plan */}
+          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl w-full md:w-3/4 lg:w-full max-w-lg h-full">
+            <div className="flex flex-col items-center">
+              <p className="text-lg lg:text-xl font-bold text-primary">
+                Mentorship
+              </p>
+              <p className="text-base-content/80 mt-2">
+                Join daily live mentorship sessions and get direct insights into
+                market trends and strategies.
+              </p>
             </div>
+
+            <div className="text-center">
+              <p className="text-5xl tracking-tight font-extrabold">€100</p>
+              <p className="text-sm text-base-content/80">Per month</p>
+            </div>
+
+            <div className="space-y-2.5 leading-relaxed text-base">
+              <ul className="flex flex-col space-y-4 text-left">
+                <li className="flex items-center gap-2">
+                  ✅ Daily live trading breakdowns
+                </li>
+                <li className="flex items-center gap-2">
+                  ✅ Priority access to Q&A sessions
+                </li>
+                <li className="flex items-center gap-2">
+                  ✅ Market analysis & trade setups
+                </li>
+                <li className="flex items-center gap-2">
+                  ✅ Exclusive community access
+                </li>
+              </ul>
+            </div>
+            <Shit />
+          </div>
+
+          {/* One-on-One Coaching */}
+          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl w-full md:w-3/4 lg:w-full max-w-lg h-full">
+            <div className="flex flex-col items-center">
+              <p className="text-lg lg:text-xl font-bold text-primary">
+                One-on-One Coaching
+              </p>
+              <p className="text-base-content/80 mt-2">
+                Get personalized coaching to improve your trading strategy, risk
+                management, and mindset.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <p className="text-5xl tracking-tight font-extrabold">€50</p>
+              <p className="text-sm text-base-content/80">Per hour</p>
+            </div>
+
+            <div className="space-y-2.5 leading-relaxed text-base">
+              <ul className="flex flex-col space-y-4 text-left">
+                <li className="flex items-center gap-2">
+                  ✅ Custom strategy review
+                </li>
+                <li className="flex items-center gap-2">
+                  ✅ Personalized feedback on past trades
+                </li>
+                <li className="flex items-center gap-2">
+                  ✅ Risk management optimization
+                </li>
+                <li className="flex items-center gap-2">
+                  ✅ Ask anything & get expert guidance
+                </li>
+              </ul>
+            </div>
+            <Shit />
           </div>
         </div>
       </div>

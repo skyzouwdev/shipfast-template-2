@@ -1,30 +1,36 @@
 const DownloadSection = () => {
   return (
-    <section className="bg-base-200 py-12 text-center lg:w-1/2 lg:mx-auto lg:rounded-xl">
-      <h2 className="text-3xl font-bold text-gray-300 mb-6">
-        Available everywhere
+    <section className="bg-base-200 py-16 text-center rounded-xl mx-auto max-w-2xl shadow-lg mb-16">
+      <h2 className="text-4xl font-extrabold text-base-content mb-4">
+        Join Our Trading Community
       </h2>
-      <div className="flex justify-center gap-4">
+      <p className="text-base-content/80 text-lg mb-8">
+        Get access to exclusive trading insights, mentorship, and daily market
+        outlooks.
+      </p>
+      <div className="flex justify-center gap-8">
         <a
           href="https://apps.apple.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className="transform hover:scale-105 transition duration-300"
         >
           <img
-            src="/ios.png"
-            alt="Download on the App Store"
-            className="h-12"
+            src="/discord.png"
+            alt="Join on Discord"
+            className="h-24 drop-shadow-md bg-base-100 p-2 rounded-lg"
           />
         </a>
         <a
           href="https://play.google.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className="transform hover:scale-105 transition duration-300"
         >
           <img
-            src="/android.png"
-            alt="Get it on Google Play"
-            className="h-12"
+            src="/whop.png"
+            alt="Join on Whop"
+            className="h-24 drop-shadow-md bg-base-100 p-2 rounded-lg"
           />
         </a>
       </div>

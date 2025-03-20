@@ -9,45 +9,50 @@ const Hero = () => {
       <div className="flex flex-col items-center justify-center text-center gap-20 lg:gap-24">
         <div className="flex flex-col items-center lg:items-center gap-4 space-y-6">
           <h1 className="font-extrabold text-5xl lg:text-6xl tracking-tight md:-mb-4">
-            Turn your goals and routines into{" "}
+            Learn to trade{" "}
             <span className="relative inline-block">
-              <span className="absolute inset-x-0 bottom-0 h-1 bg-green-500 transform scale-x-100 transition-transform duration-300 ease-out" />
-              <span className="relative z-10 text-green-500">success</span>
+              <span className="absolute inset-x-0 bottom-0 h-1 bg-primary transform scale-x-100 transition-transform duration-300 ease-out" />
+              <span className="relative z-10 text-primary">in weeks</span>
+            </span>{" "}
+            <span className="relative inline-block">
+              <span className="absolute inset-x-0 bottom-0 h-1 bg-base-100 transform scale-x-100 transition-transform duration-300 ease-out" />
+              <span className="relative z-10 ">,not months</span>
             </span>
           </h1>
           <p className="text-xl font-medium leading-relaxed">
-            Track your day, build powerful routines, and turn your dreams into
-            reality
+            Reaching profitability never been so easy - Even as a complete
+            beginner
           </p>
           <Link
             href={`/#pricing`}
-            className="btn bg-green-500 hover:bg-green-600 text-white rounded-full px-12 py-4 flex items-center justify-center text-center h-auto flex-shrink-0 leading-tight hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="btn bg-primary hover:bg-primary text-white rounded-full px-12 py-4 flex items-center justify-center text-center h-auto flex-shrink-0 leading-tight hover:scale-105 transition-transform duration-300 ease-in-out"
           >
-            Achieve your goals today
+            Get instant access
           </Link>
           <TestimonialsAvatars />
         </div>
-        <div className="flex flex-col items-center lg:items-center gap-y-1 lg:w-1/2">
-          <div className="text-center font-bold text-3xl lg:text-4xl flex-nowrap">
-            Build Healthy Habits, Stay Consistent
+        <div className="flex flex-col items-center lg:items-center gap-y-3 lg:w-full">
+          <div className="text-center font-bold text-4xl lg:text-4xl flex-nowrap">
+            Join the <span className="text-primary">best</span>{" "}
+            <span className="text-primary">trading</span> group
           </div>
-          <div className="flex flex-row gap-3 lg:gap-5 items-center">
-            <div className="w-1/2">
+          <div className="flex flex-row gap-3 lg:gap-5 items-center w-full max-w-screen-lg">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/a.png"
                 alt="Screen showing trading platform"
-                width={500}
-                height={350}
-                className="mx-auto"
+                width={1000}
+                height={700}
+                className="w-full h-auto object-contain mx-auto"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2">
               <Image
                 src="/b.png"
                 alt="Another screen showing trading platform"
-                width={500}
-                height={350}
-                className="mx-auto"
+                width={1000}
+                height={700}
+                className="w-full h-auto object-contain mx-auto"
               />
             </div>
           </div>

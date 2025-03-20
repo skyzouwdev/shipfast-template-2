@@ -4,12 +4,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "BetterLife",
+  appName: "TradeFast",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Responsável por trazer soluções para o mundo de exercício físico auxiliando Personal Trainers.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "BetterLife",
+  domainName: "TradeFast",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",

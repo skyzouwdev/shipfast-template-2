@@ -10,7 +10,7 @@ import Image from "next/image";
 import Redirect from "./Redirect"; // Import du composant Redirect
 
 // Logo path
-const logo = "/sport.png";
+const logo = "/trade.png";
 
 const links = [
   {
@@ -89,7 +89,7 @@ const Header = () => {
               width={32}
               height={32}
             />
-            <span className="font-semibold text-md">BetterLife</span>
+            <span className="font-semibold text-md">TradeFast</span>
           </Link>
         </div>
 

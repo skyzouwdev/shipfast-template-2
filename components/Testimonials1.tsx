@@ -17,25 +17,25 @@ const Testimonial = () => {
                 width={320}
                 height={320}
                 className="rounded-lg max-w-[320px] md:max-w-[280px] lg:max-w-[320px] object-center border-2 border-white/10 shadow-md"
-                src="/user3.png"
+                src="/image.png"
                 alt="A satisfied BetterLife user"
               />
             </div>
 
             <div>
               <blockquote className="text-xl font-medium leading-8 text-base-content sm:text-2xl sm:leading-10">
-                "BetterLife completely transformed how I track my daily habits.
-                I never realized how powerful consistency could be until I
-                started seeing my progress visually. Now, I stay motivated and
-                keep pushing forward every day!"
+                "Thanks to the mentorship and personalized guidance, I was able
+                to structure my trading strategy and achieve real results. In
+                just a few weeks, I gained discipline and confidence, and today,
+                I execute profitable trades with ease."
               </blockquote>
               <figcaption className="mt-10 flex items-center justify-start gap-5">
                 <div className="text-base">
                   <div className="font-semibold text-base-content mb-0.5">
-                    Michael Carter
+                    Ayoub Bouadel
                   </div>
                   <div className="text-base-content/60">
-                    Productivity Enthusiast &amp; Habit Tracker
+                    Independent Trader &amp; Mentorship Student
                   </div>
                 </div>
 
@@ -43,7 +43,7 @@ const Testimonial = () => {
                   width={150}
                   height={50}
                   className="w-16 md:w-20"
-                  src="/sport.png"
+                  src="/trade.png"
                   alt="Sport logo"
                 />
               </figcaption>

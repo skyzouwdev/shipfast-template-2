@@ -64,7 +64,7 @@ const list: {
   {
     username: "habitmaster",
     name: "Emily Johnson",
-    text: "BetterLife completely changed my daily routine. Tracking my habits has never been this easy, and I finally feel in control of my progress!",
+    text: "Thanks to the mentorship, I've doubled my trading profits in just three months!",
     type: refTypes.twitter,
     link: "https://twitter.com/habitmaster",
     img: "https://pbs.twimg.com/profile_images/1234567890/emilyjohnson.jpg",
@@ -72,33 +72,33 @@ const list: {
   {
     username: "focusmode",
     name: "Daniel Carter",
-    text: "With BetterLife, I stay consistent with my goals. The tracking system is intuitive and keeps me accountable every day!",
+    text: "The trading strategies I learned have made a significant impact on my consistency.",
     type: refTypes.twitter,
     link: "https://twitter.com/focusmode",
   },
   {
     username: "growthseeker",
     name: "Sophia Lee",
-    text: "I used to struggle with staying motivated, but BetterLife’s habit tracking makes it so simple and rewarding.",
+    text: "Joining this program was a game changer. My confidence in trading has skyrocketed.",
     type: refTypes.productHunt,
     link: "https://www.producthunt.com/posts/betterlife",
   },
   {
     name: "James Wright",
-    text: "BetterLife helps me track everything from sleep to workouts. I love how easy it is to see my progress at a glance!",
+    text: "The structured approach helped me refine my strategy and achieve consistent results.",
     type: refTypes.other,
   },
   {
     username: "dailygrind",
     name: "Olivia Brown",
-    text: "I've tried other habit trackers, but nothing compares to BetterLife’s simplicity and effectiveness.",
+    text: "I've seen a remarkable improvement in my trading skills since joining the mentorship.",
     type: refTypes.productHunt,
     link: "https://www.producthunt.com/posts/betterlife",
   },
   {
     username: "routineking",
     name: "Michael Smith",
-    text: "BetterLife keeps me on track and motivated. The habit tracking feature is exactly what I needed to stay disciplined!",
+    text: "The insights I gained from this program have been invaluable for my trading journey.",
     type: refTypes.twitter,
     link: "https://twitter.com/routineking",
     img: "https://pbs.twimg.com/profile_images/9876543210/michaelsmith.jpg",
@@ -179,12 +179,13 @@ const Testimonials11 = () => {
           <div className="mb-8">
             <p className="text-primary text-sm font-semibold">Review</p>
             <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
-              32 users are already building better habits!
+              32 traders have already transformed their strategy!
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
-            Don't just take our word for it. See how BetterLife has helped users
-            stay on track and achieve their goals effortlessly.
+            Don't just take our word for it. See how our mentorship and
+            structured approach have helped traders refine their strategies,
+            stay disciplined, and reach consistency.
           </p>
         </div>
 

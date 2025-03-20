@@ -22,8 +22,8 @@ const AffiliateSection = () => {
           Earn ${earnings} today with commissions
         </h2>
         <p className="mt-4 text-gray-600">
-          When you refer a new student to BetterLife, you earn 50% of the
-          current price.
+          When you refer a new student to TradeFast, you earn 50% of the current
+          price.
         </p>
         <button className="btn btn-primary mt-6">Become an Affiliate</button>
       </div>

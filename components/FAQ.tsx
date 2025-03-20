@@ -13,50 +13,52 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What is BetterLife?",
+    question: "What is included in the Education Plan?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        BetterLife is an intuitive habit-tracking platform designed to help you
-        build strong routines, achieve your goals, and enhance your overall
-        well-being through simple daily tracking.
+        The Education Plan gives you lifetime access to over 20 hours of
+        structured video lessons covering trading strategies, risk management,
+        psychology, and technical analysis.
       </div>
     ),
   },
   {
-    question: "What is the difference between the Monthly and Lifetime plan?",
+    question: "What does the Mentorship Plan offer?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        The Monthly plan gives you full access to all features with a flexible
-        monthly subscription. The Lifetime plan is a one-time payment providing
-        unlimited lifetime access, offering the best long-term value.
+        The Mentorship Plan includes daily live trading sessions, market
+        breakdowns, and Q&A sessions to help you refine your strategy and stay
+        updated with the latest market trends.
       </div>
     ),
   },
   {
-    question: "Is there an iOS/Android app?",
+    question: "How does the One-on-One Coaching work?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        Yes! BetterLife is fully accessible on both iOS and Android devices,
-        allowing you to track your routines effortlessly wherever you are.
+        Our One-on-One Coaching allows you to book personalized 1-hour sessions
+        where we analyze your trades, optimize your strategy, and provide
+        tailored feedback to accelerate your growth.
       </div>
     ),
   },
   {
-    question: "Can I cancel my subscription at any time?",
+    question: "Is this suitable for beginners?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        Absolutely! You can easily cancel your monthly subscription whenever you
-        want, with no hidden fees or penalties.
+        Absolutely! Our programs are designed for all levels, from beginners to
+        advanced traders. The structured lessons and mentorship help you
+        progress at your own pace.
       </div>
     ),
   },
   {
-    question: "Is my personal information safe on BetterLife?",
+    question: "What payment options are available?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        Your privacy and security are our highest priority. BetterLife uses
-        advanced encryption and strict data-protection policies to ensure your
-        information is always safe and private.
+        We accept payments via Stripe, allowing you to pay securely with
+        credit/debit cards. You can choose between monthly subscriptions or
+        lifetime access depending on your plan.
       </div>
     ),
   },

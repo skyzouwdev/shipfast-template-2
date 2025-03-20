@@ -3,121 +3,83 @@
 import { useState, useEffect, useRef } from "react";
 import type { JSX } from "react";
 
-// Liste des fonctionnalités
+// Liste des fonctionnalités adaptées au trading
 const features = [
   {
-    name: "Meals",
+    name: "Education",
     description: (
       <>
         <ul className="space-y-2">
           {[
-            "Track your daily meals easily.",
-            "Discover eating patterns and improve your diet.",
-            "Make healthier decisions effortlessly.",
+            "Access 20+ hours of in-depth trading video content.",
+            "Learn proven strategies and risk management techniques.",
+            "Master technical and fundamental analysis at your pace.",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
-              🥗 {item}
+              🎓 {item}
             </li>
           ))}
         </ul>
       </>
     ),
-    svg: <span className="text-4xl">🥗</span>,
+    svg: <span className="text-4xl">🎓</span>,
   },
   {
-    name: "Sleep",
+    name: "Mentorship",
     description: (
       <>
         <ul className="space-y-2">
           {[
-            "Monitor your sleep patterns.",
-            "Improve your sleep quality.",
-            "Wake up feeling refreshed every day.",
+            "Join daily live mentorship sessions with expert traders.",
+            "Get real-time insights and market breakdowns.",
+            "Ask questions and refine your trading approach instantly.",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
-              🌙 {item}
+              🎥 {item}
             </li>
           ))}
         </ul>
       </>
     ),
-    svg: <span className="text-4xl">🌙</span>,
+    svg: <span className="text-4xl">🎥</span>,
   },
   {
-    name: "Meditation",
+    name: "Daily Outlooks",
     description: (
       <>
         <ul className="space-y-2">
           {[
-            "Track your meditation sessions.",
-            "Reduce stress and increase focus.",
-            "Build a habit of mindfulness.",
+            "Receive market forecasts and key levels every morning.",
+            "Identify high-probability trade setups in advance.",
+            "Stay prepared and confident before entering trades.",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
-              🧘 {item}
+              📊 {item}
             </li>
           ))}
         </ul>
       </>
     ),
-    svg: <span className="text-4xl">🧘</span>,
+    svg: <span className="text-4xl">📊</span>,
   },
   {
-    name: "Exercise",
+    name: "Setup Review",
     description: (
       <>
         <ul className="space-y-2">
           {[
-            "Log your workouts and track progress.",
-            "Stay consistent with exercise routines.",
-            "Boost your energy and stay fit.",
+            "Analyze and refine past trades for continuous improvement.",
+            "Receive expert feedback on your trading decisions.",
+            "Understand what went right and what to avoid next time.",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
-              🏃 {item}
+              🔍 {item}
             </li>
           ))}
         </ul>
       </>
     ),
-    svg: <span className="text-4xl">🏃</span>,
-  },
-  {
-    name: "Goals",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "Set and achieve personal goals.",
-            "Stay motivated with clear milestones.",
-            "Track progress towards success.",
-          ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
-              🎯 {item}
-            </li>
-          ))}
-        </ul>
-      </>
-    ),
-    svg: <span className="text-4xl">🎯</span>,
-  },
-  {
-    name: "Daily Review",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "Reflect on your day with structured reviews.",
-            "Identify areas of improvement.",
-            "Build a habit of self-awareness and growth.",
-          ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
-              📔 {item}
-            </li>
-          ))}
-        </ul>
-      </>
-    ),
-    svg: <span className="text-4xl">📔</span>,
+    svg: <span className="text-4xl">🔍</span>,
   },
 ];
 
@@ -167,12 +129,12 @@ const FeaturesListicle = () => {
       <div className="max-w-3xl mx-auto">
         <div className="bg-base-100 max-md:px-8 max-w-3xl">
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
-            Build strong habits, track your progress, and achieve more.
+            Master Trading with Structured Learning & Live Mentorship
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
-            BetterLife gives you everything you need to track your habits
-            effortlessly. Stop struggling, stay motivated, and easily achieve
-            your daily goals.
+            Gain access to professional trading education, daily market
+            insights, and expert mentorship to refine your skills and stay ahead
+            in the markets.
           </div>
         </div>
       </div>

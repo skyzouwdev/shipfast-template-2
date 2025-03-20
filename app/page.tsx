@@ -13,6 +13,7 @@ import FeaturesListicle from "@/components/FeaturesListicle";
 import DownloadSection from "@/components/Apple";
 import TestimonialRating from "@/components/TestimonialRating";
 import Testimonial from "@/components/Testimonials1";
+import Avec from "@/components/Avec";
 export default function Home() {
   return (
     <>
@@ -26,6 +27,7 @@ export default function Home() {
         <FeaturesListicle />
         <TestimonialRating />
         <DownloadSection />
+        <Avec />
         <Testimonials11 />
         <Suspense fallback={<div>Loading Pricing...</div>}>
           <Pricing />
