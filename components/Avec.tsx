@@ -27,7 +27,7 @@ const Avec = () => {
             With Our Trading Mentorship
           </h3>
           <ul className="space-y-3 text-primary">
-            <li>✓ Proven trading strategies</li>
+            <li>✓ Proven trading strategy</li>
             <li>✓ Daily live mentorship sessions</li>
             <li>✓ Structured risk management</li>
             <li>✓ Trade breakdowns and feedback</li>

@@ -10,7 +10,7 @@ const DownloadSection = () => {
       </p>
       <div className="flex justify-center gap-8">
         <a
-          href="https://apps.apple.com/"
+          href="https://discord.com/invite/ZFseUcDhme"
           target="_blank"
           rel="noopener noreferrer"
           className="transform hover:scale-105 transition duration-300"
@@ -22,7 +22,7 @@ const DownloadSection = () => {
           />
         </a>
         <a
-          href="https://play.google.com/"
+          href="https://whop.com/tradefast-education/"
           target="_blank"
           rel="noopener noreferrer"
           className="transform hover:scale-105 transition duration-300"

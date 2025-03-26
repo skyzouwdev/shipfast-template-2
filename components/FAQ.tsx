@@ -16,9 +16,10 @@ const faqList: FAQItemProps[] = [
     question: "What is included in the Education Plan?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        The Education Plan gives you lifetime access to over 20 hours of
-        structured video lessons covering trading strategies, risk management,
-        psychology, and technical analysis.
+        The Education Plan gives you lifetime access to 20+ hours of structured
+        video lessons covering ICT basics, my personal strategy, risk
+        management, trading psychology, and access to my personal trading
+        journal with every trade I’ve taken.
       </div>
     ),
   },
@@ -26,9 +27,9 @@ const faqList: FAQItemProps[] = [
     question: "What does the Mentorship Plan offer?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        The Mentorship Plan includes daily live trading sessions, market
-        breakdowns, and Q&A sessions to help you refine your strategy and stay
-        updated with the latest market trends.
+        The Mentorship Plan includes daily live outlooks, market breakdowns, and
+        Q&A sessions to help you understand my process. I also review your
+        setups and provide personalized feedback.
       </div>
     ),
   },
@@ -37,7 +38,7 @@ const faqList: FAQItemProps[] = [
     answer: (
       <div className="space-y-2 leading-relaxed">
         Our One-on-One Coaching allows you to book personalized 1-hour sessions
-        where we analyze your trades, optimize your strategy, and provide
+        where i analyze your trades, optimize your strategy, and provide
         tailored feedback to accelerate your growth.
       </div>
     ),
@@ -56,7 +57,7 @@ const faqList: FAQItemProps[] = [
     question: "What payment options are available?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        We accept payments via Stripe, allowing you to pay securely with
+        We accept payments via Whop, allowing you to pay securely with
         credit/debit cards. You can choose between monthly subscriptions or
         lifetime access depending on your plan.
       </div>

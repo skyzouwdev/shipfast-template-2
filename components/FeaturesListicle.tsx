@@ -12,8 +12,8 @@ const features = [
         <ul className="space-y-2">
           {[
             "Access 20+ hours of in-depth trading video content.",
-            "Learn proven strategies and risk management techniques.",
-            "Master technical and fundamental analysis at your pace.",
+            "Learn my strategy and risk management techniques.",
+            "Access to my journal and analyse my trades.",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               🎓 {item}
@@ -49,7 +49,7 @@ const features = [
       <>
         <ul className="space-y-2">
           {[
-            "Receive market forecasts and key levels every morning.",
+            "Receive market forecasts and key levels every days.",
             "Identify high-probability trade setups in advance.",
             "Stay prepared and confident before entering trades.",
           ].map((item) => (
@@ -69,7 +69,7 @@ const features = [
         <ul className="space-y-2">
           {[
             "Analyze and refine past trades for continuous improvement.",
-            "Receive expert feedback on your trading decisions.",
+            "Receive my feedback on your trading decisions.",
             "Understand what went right and what to avoid next time.",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">

@@ -62,46 +62,44 @@ const list: {
   img?: string | StaticImageData;
 }[] = [
   {
-    username: "habitmaster",
-    name: "Emily Johnson",
-    text: "Thanks to the mentorship, I've doubled my trading profits in just three months!",
+    username: "officielitachi",
+    name: "Itachi",
+    text: "Thank you, Skyzouw, for the mentorship! I never would have believed I could get funded in just 4 months. I appreciate everything you've done for me. Now, let's go for that 200k funding! @skyzouwfx ❤️👊",
     type: refTypes.twitter,
-    link: "https://twitter.com/habitmaster",
-    img: "https://pbs.twimg.com/profile_images/1234567890/emilyjohnson.jpg",
+    link: "https://x.com/officielitachi/status/1903406305961726028",
+    img: "/user2.png",
   },
   {
-    username: "focusmode",
-    name: "Daniel Carter",
-    text: "The trading strategies I learned have made a significant impact on my consistency.",
+    username: "hitsoufx",
+    name: "Hitsou",
+    text: "I will always be grateful to @skyzouwfx — he taught me everything about trading and helped me become a profitable trader.",
     type: refTypes.twitter,
-    link: "https://twitter.com/focusmode",
+    link: "https://x.com/hitsoufx/status/1903414840074367071",
+    img: "/user1.png",
   },
   {
-    username: "growthseeker",
-    name: "Sophia Lee",
-    text: "Joining this program was a game changer. My confidence in trading has skyrocketed.",
-    type: refTypes.productHunt,
-    link: "https://www.producthunt.com/posts/betterlife",
-  },
-  {
-    name: "James Wright",
-    text: "The structured approach helped me refine my strategy and achieve consistent results.",
-    type: refTypes.other,
-  },
-  {
-    username: "dailygrind",
-    name: "Olivia Brown",
-    text: "I've seen a remarkable improvement in my trading skills since joining the mentorship.",
-    type: refTypes.productHunt,
-    link: "https://www.producthunt.com/posts/betterlife",
-  },
-  {
-    username: "routineking",
-    name: "Michael Smith",
-    text: "The insights I gained from this program have been invaluable for my trading journey.",
+    username: "Thyrdfx",
+    name: "Thyrd",
+    text: "Thank you @skyzouwfx for the mentorship. It has improved my level in a very short time. All the information is useful — I didn't waste time and I don't regret it.",
     type: refTypes.twitter,
-    link: "https://twitter.com/routineking",
-    img: "https://pbs.twimg.com/profile_images/9876543210/michaelsmith.jpg",
+    link: "https://x.com/Thyrdfx/status/1903831289234403586",
+    img: "/user3.png",
+  },
+  {
+    username: "Ants_fx",
+    name: "Ants",
+    text: "Thx @skyzouwfx for all the help, you helped me become profitable in such a quick time and I'm grateful for this 👊",
+    type: refTypes.twitter,
+    link: "https://x.com/Ants_fx/status/1903944871003451801",
+    img: "/user4.png",
+  },
+  {
+    username: "TedfyFx",
+    name: "Tedfy",
+    text: "Grateful for all you have done to me @skyzouwfx, you gave me a profitable edge in the market and now since I've been trading it I'm profitable. Let's crush the market in 2025 even more 🤝.",
+    type: refTypes.twitter,
+    link: "https://x.com/TedfyFx/status/1904260306726998441",
+    img: "/user5.png",
   },
 ];
 
@@ -118,19 +116,11 @@ const Testimonial = ({ i }: { i: number }) => {
         </blockquote>
         <figcaption className="relative flex items-center justify-start gap-4 pt-4 mt-4 border-t border-base-content/5">
           <div className="overflow-hidden rounded-full bg-base-300 shrink-0">
-            {i === 0 ? (
-              <span className="w-10 h-10 rounded-full flex justify-center items-center text-lg font-medium bg-base-300">
-                J
-              </span>
-            ) : i === 5 ? (
-              <span className="w-10 h-10 rounded-full flex justify-center items-center text-lg font-medium bg-base-300">
-                M
-              </span>
-            ) : testimonial.img ? (
+            {testimonial.img ? (
               <Image
                 className="w-10 h-10 rounded-full object-cover"
-                src={list[i].img}
-                alt={`${list[i].name}'s testimonial for ${config.appName}`}
+                src={testimonial.img}
+                alt={`${testimonial.name}'s testimonial for ${config.appName}`}
                 width={48}
                 height={48}
               />
@@ -179,7 +169,7 @@ const Testimonials11 = () => {
           <div className="mb-8">
             <p className="text-primary text-sm font-semibold">Review</p>
             <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
-              32 traders have already transformed their strategy!
+              5 traders have already transformed their trading!
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
@@ -193,7 +183,7 @@ const Testimonials11 = () => {
           role="list"
           className="grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:max-w-none"
         >
-          {[...Array(6)].map((e, i) => (
+          {[...Array(5)].map((e, i) => (
             <Testimonial key={i} i={i} />
           ))}
         </ul>

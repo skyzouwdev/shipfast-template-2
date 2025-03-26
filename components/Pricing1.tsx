@@ -16,16 +16,16 @@ const Pricing = () => {
           market.
         </p>
 
-        <div className="relative w-full max-w-7xl mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-stretch mx-auto text-center">
+        <div className="relative w-full max-w-7xl mt-12 flex flex-col lg:flex-row gap-8 mx-auto text-center">
           {/* Education Plan */}
-          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl w-full md:w-3/4 lg:w-full max-w-lg h-full">
+          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-6 md:p-10 lg:p-12 rounded-2xl shadow-xl w-full max-w-sm md:max-w-md lg:max-w-lg h-full mx-auto">
             <div className="flex flex-col items-center">
               <p className="text-lg lg:text-xl font-bold text-primary">
                 Education
               </p>
               <p className="text-base-content/80 mt-2">
-                Access 20+ hours of trading videos covering strategies, risk
-                management, and mindset training.
+                Access 20+ hours of trading videos covering ICT bases, my
+                strategy cases studies , and gain access to my personal journal.
               </p>
             </div>
 
@@ -40,28 +40,28 @@ const Pricing = () => {
                   ✅ 20+ hours of structured content
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Learn at your own pace
+                  ✅ Psycology & mindset training
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Proven trading strategies
+                  ✅ My strategy & risk management
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Risk management techniques
+                  ✅ My personal trading journal
                 </li>
               </ul>
             </div>
-            <Shit />
+            <Shit href="https://whop.com/tradefast-education/" />
           </div>
 
           {/* Mentorship Plan */}
-          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl w-full md:w-3/4 lg:w-full max-w-lg h-full">
+          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-6 md:p-10 lg:p-12 rounded-2xl shadow-xl w-full max-w-sm md:max-w-md lg:max-w-lg h-full mx-auto">
             <div className="flex flex-col items-center">
               <p className="text-lg lg:text-xl font-bold text-primary">
                 Mentorship
               </p>
               <p className="text-base-content/80 mt-2">
-                Join daily live mentorship sessions and get direct insights into
-                market trends and strategies.
+                Level up your trading with daily live mentorship — get expert
+                guidance and full support, every step of the way.
               </p>
             </div>
 
@@ -73,31 +73,31 @@ const Pricing = () => {
             <div className="space-y-2.5 leading-relaxed text-base">
               <ul className="flex flex-col space-y-4 text-left">
                 <li className="flex items-center gap-2">
-                  ✅ Daily live trading breakdowns
+                  ✅ Daily live trading outlooks/reviews
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Priority access to Q&A sessions
+                  ✅ Access to Q&A sessions
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Market analysis & trade setups
+                  ✅ Personalized trade feedback
                 </li>
                 <li className="flex items-center gap-2">
                   ✅ Exclusive community access
                 </li>
               </ul>
             </div>
-            <Shit />
+            <Shit href="https://whop.com/tradefast-mentorship/" />
           </div>
 
           {/* One-on-One Coaching */}
-          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-12 rounded-2xl shadow-xl w-full md:w-3/4 lg:w-full max-w-lg h-full">
+          <div className="relative flex flex-col items-center gap-5 lg:gap-8 bg-base-100 p-6 md:p-10 lg:p-12 rounded-2xl shadow-xl w-full max-w-sm md:max-w-md lg:max-w-lg h-full mx-auto">
             <div className="flex flex-col items-center">
               <p className="text-lg lg:text-xl font-bold text-primary">
                 One-on-One Coaching
               </p>
               <p className="text-base-content/80 mt-2">
-                Get personalized coaching to improve your trading strategy, risk
-                management, and mindset.
+                Book a private 1-hour session to review your trades, journal,
+                and strategy in depth.
               </p>
             </div>
 
@@ -109,20 +109,20 @@ const Pricing = () => {
             <div className="space-y-2.5 leading-relaxed text-base">
               <ul className="flex flex-col space-y-4 text-left">
                 <li className="flex items-center gap-2">
-                  ✅ Custom strategy review
+                  ✅ 1-hour private coaching session
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Personalized feedback on past trades
+                  ✅ Strategy breakdown & trade feedback
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Risk management optimization
+                  ✅ Journal & risk management insights
                 </li>
                 <li className="flex items-center gap-2">
-                  ✅ Ask anything & get expert guidance
+                  ✅ Fully personalized support
                 </li>
               </ul>
             </div>
-            <Shit />
+            <Shit href="https://whop.com/1-on-1-coaching-call-63/" />
           </div>
         </div>
       </div>

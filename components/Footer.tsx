@@ -69,10 +69,10 @@ const Footer = () => {
 
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
                 <Link href="/tos" className="link link-hover">
-                  Terms de services
+                  Terms of services
                 </Link>
                 <Link href="/privacy-policy" className="link link-hover">
-                  Politiques privées
+                  Privacy Policy
                 </Link>
               </div>
             </div>

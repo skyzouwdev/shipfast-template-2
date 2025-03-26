@@ -32,7 +32,7 @@ const Testimonial = () => {
               <figcaption className="mt-10 flex items-center justify-start gap-5">
                 <div className="text-base">
                   <div className="font-semibold text-base-content mb-0.5">
-                    Ayoub Bouadel
+                    Ayoub Bouadel ( OfficielItachi )
                   </div>
                   <div className="text-base-content/60">
                     Independent Trader &amp; Mentorship Student

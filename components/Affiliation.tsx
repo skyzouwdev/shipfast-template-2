@@ -7,7 +7,10 @@ const AffiliateSection = () => {
   const earnings = referrals * 50;
 
   return (
-    <div className="flex flex-col justify-center text-center items-center p-8 bg-base-100 shadow-md rounded-lg">
+    <div
+      id="affiliation"
+      className="flex flex-col justify-center text-center items-center p-8 bg-base-100 shadow-md rounded-lg"
+    >
       <div className="w-full max-w-md">
         <Image
           src="/com.png"
@@ -25,7 +28,17 @@ const AffiliateSection = () => {
           When you refer a new student to TradeFast, you earn 50% of the current
           price.
         </p>
-        <button className="btn btn-primary mt-6">Become an Affiliate</button>
+        <button
+          onClick={() => {
+            alert(
+              "Once you're on the Whop page, scroll down to the bottom to find the affiliate section."
+            );
+            window.open("https://whop.com/tradefast-mentorship/", "_blank");
+          }}
+          className="btn btn-primary mt-6"
+        >
+          Become an Affiliate
+        </button>
       </div>
       <div className="mt-10 w-full max-w-md md:w-3/4 lg:w-1/2">
         <label

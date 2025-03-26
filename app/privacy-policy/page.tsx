@@ -1,35 +1,12 @@
 import Link from "next/link";
 
-import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
 
-// CHATGPT PROMPT TO GENERATE YOUR PRIVACY POLICY — replace with your own data 👇
-
-// 1. Go to https://chat.openai.com/
-// 2. Copy paste bellow
-// 3. Replace the data with your own (if needed)
-// 4. Paste the answer from ChatGPT directly in the <pre> tag below
-
-// You are an excellent lawyer.
-
-// I need your help to write a simple privacy policy for my website. Here is some context:
-// - Website: https://gopump.co
-// - Name: Pump
-// - Description: An application responsible for help Personal Trainers and People that like to go to the gym improve their performance.
-// - User data collected: name, email, phone, and payment information
-// - Non-personal data collection: web cookies
-// - Purpose of Data Collection: To know better our clients
-// - Data sharing: we do not share the data with any other parties
-// - Children's Privacy: we do not collect any data from children
-// - Updates to the Privacy Policy: users will be updated by email
-// - Contact information: official@gopump.co
-
-// Please write a simple privacy policy for my site. Add the current date.  Do not add or explain your reasoning. Answer:
-
-export const metadata = getSEOTags({
-  title: `Privacy Policy | ${config.appName}`,
-  canonicalUrlRelative: "/privacy-policy",
-});
+export const metadata = {
+  title: "Privacy Policy | TradeFast",
+  description:
+    "Read our privacy policy to learn how we handle your data at TradeFast.",
+};
 
 const PrivacyPolicy = () => {
   return (
@@ -48,47 +25,47 @@ const PrivacyPolicy = () => {
               clipRule="evenodd"
             />
           </svg>{" "}
-          Voltar
+          Go back
         </Link>
         <h1 className="text-3xl font-extrabold pb-6">
-          Política de Privacidade do {config.appName}
+          Privacy-policy {config.appName}
         </h1>
 
         <pre
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Última atualização: 12/12/2023
+          {`Last updated: March 25, 2025
 
-Bem-vindo ao Pump (https://gopump.co), um aplicativo dedicado a ajudar treinadores pessoais e entusiastas da fitness a melhorarem seu desempenho. Sua privacidade é de extrema importância para nós. Esta Política de Privacidade delineia os tipos de informações que coletamos, como as utilizamos e as medidas que tomamos para protegê-las.
+Welcome to TradeFast (https://tradefast), a trading community designed to help traders improve their skills through education, interaction with other members, and various tools and features.
 
-1. Coleta e Uso de Informações
+1. Information We Collect
 
-Coletamos os seguintes tipos de informações:
+We collect the following types of information:
 
-Dados Pessoais: Isso inclui seu nome, endereço de e-mail, número de telefone e informações de pagamento. Coletamos esses dados para entender melhor e atender nossos clientes.
+Personal Data: This includes your name, email address, phone number, and payment information. We collect this data to better understand our users and provide a more personalized service.
 
-Dados Não Pessoais: Utilizamos cookies da web para melhorar sua experiência em nosso site. Esses cookies nos ajudam a entender o comportamento do usuário em nosso site, mas não coletam informações pessoais.
+Non-Personal Data: We use web cookies to enhance your experience on our platform. These cookies help us analyze user behavior without collecting personally identifiable information.
 
-2. Finalidade da Coleta de Dados
+2. Purpose of Data Collection
 
-O objetivo principal da coleta de dados é aprimorar nossos serviços e proporcionar uma experiência personalizada para nossos usuários. Entender nossos clientes nos ajuda a melhorar nosso aplicativo e oferecer orientação e suporte mais personalizados.
+We collect data to get to know our users better, improve our services, and provide a personalized user experience.
 
-3. Compartilhamento e Divulgação de Dados
+3. Data Sharing and Disclosure
 
-O Pump respeita sua privacidade. Não compartilhamos seus dados pessoais com terceiros. Qualquer dado coletado é exclusivamente para o propósito de aprimorar nosso serviço e não é compartilhado externamente.
+At TradeFast, your privacy is important to us. We do not share your personal data with third parties. All collected data is used exclusively for the operation and improvement of the platform.
 
-4. Privacidade Infantil
+4. Children's Privacy
 
-Nossos serviços não são direcionados a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças. Se tomarmos conhecimento de que recebemos inadvertidamente informações pessoais de uma criança menor de 13 anos, excluiremos tais informações de nossos registros.
+Our services are not intended for children under the age of 13. We do not knowingly collect personal information from minors. If we discover that we have unintentionally collected such information, we will promptly delete it from our records.
 
-5. Alterações na Nossa Política de Privacidade
+5. Changes to Our Privacy Policy
 
-Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações, publicando a nova Política de Privacidade nesta página e atualizando a data de "Última atualização". Você também será informado sobre quaisquer mudanças significativas por meio do endereço de e-mail que nos forneceu.
+This Privacy Policy may be updated from time to time. If significant changes are made, we will notify you via email and update the "Last updated" date on this page.
 
-6. Fale Conosco
+6. Contact Us
 
-Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco em official@gopump.co.`}
+If you have any questions about this Privacy Policy, please contact us at: leclubvvp@gmail.com.`}
         </pre>
       </div>
     </main>

@@ -1,30 +1,7 @@
 import Link from "next/link";
 
-import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
-
-// CHATGPT PROMPT TO GENERATE YOUR TERMS & SERVICES — replace with your own data 👇
-
-// 1. Go to https://chat.openai.com/
-// 2. Copy paste bellow
-// 3. Replace the data with your own (if needed)
-// 4. Paste the answer from ChatGPT directly in the <pre> tag below
-
-// You are an excellent lawyer.
-
-// I need your help to write a simple Terms & Services for my website. Here is some context:
-// - Website: https://gopump.co
-// - Name: Pump
-// - Contact information: official@gopump.co
-// - Description: An application responsible for help Personal Trainers and People that like to go to the gym improve their performance.
-// - Ownership: when buying a plan/subscription, users can interact with many features. They can ask for a full refund within 7 day after the purchase.
-// - User data collected: name, email, phone and payment information
-// - Non-personal data collection: web cookies
-// - Link to privacy-policy: https://gopump.co/privacy-policy
-// - Governing Law: France
-// - Updates to the Terms: users will be updated by email
-
-// Please write a simple Terms & Services for my site. Add the current date. Do not add or explain your reasoning. Answer:
+import { getSEOTags } from "@/libs/seo";
 
 export const metadata = getSEOTags({
   title: `Terms and Conditions | ${config.appName}`,
@@ -48,43 +25,43 @@ const TOS = () => {
               clipRule="evenodd"
             />
           </svg>
-          Voltar
+          Go back
         </Link>
         <h1 className="text-3xl font-extrabold pb-6">
-          Termos e Condições de Uso do {config.appName}
+          Terms of services {config.appName}
         </h1>
 
         <pre
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Última atualização: 12/12/2023
+          {`Last updated: March 25, 2025
 
-Bem-vindo ao Pump (https://gopump.co). Estes Termos e Condições de Uso ("Termos") regem o uso do nosso aplicativo, que visa ajudar treinadores pessoais e pessoas que frequentam academias a melhorarem seu desempenho. Ao acessar ou usar o Pump, você concorda em cumprir estes Termos.
+Welcome to TradeFast (https://tradefast). These Terms and Conditions ("Terms") govern the use of our platform, designed to help traders improve through education, mentorship, and shared resources. By accessing or using TradeFast, you agree to comply with these Terms.
 
-1. Informações de Contato
+1. Contact Information
 
-Para quaisquer dúvidas ou informações, entre em contato conosco pelo e-mail official@gopump.co.
+For any questions or information, contact us at: leclubvvp@gmail.com
 
-2. Propriedade e Uso do Serviço
+2. Ownership and Use of Service
 
-Ao adquirir um plano ou assinatura no Pump, você tem acesso a diversas funcionalidades. Caso não esteja satisfeito, oferecemos um reembolso integral dentro de 7 dias após a compra.
+When purchasing a plan or subscription on TradeFast, you gain access to a variety of educational content and community features. If not satisfied, we offer a full refund within 7 days of purchase.
 
-3. Coleta de Dados
+3. Data Collection
 
-Coletamos dados pessoais, como nome, e-mail, telefone e informações de pagamento. Também utilizamos cookies da web para coletar dados não pessoais. Mais informações podem ser encontradas em nossa Política de Privacidade: https://gopump.co/privacy-policy.
+We collect personal data such as name, email, phone number, and payment information. We also use web cookies to collect non-personal data. For more details, refer to our Privacy Policy: https://tradefast/privacy-policy
 
-4. Lei Aplicável
+4. Governing Law
 
-Estes Termos são regidos pelas leis do Brasil.
+These Terms are governed by the laws of France.
 
-5. Alterações nos Termos
+5. Changes to Terms
 
-Reservamo-nos o direito de modificar estes Termos a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no site. Informaremos sobre alterações significativas através do e-mail fornecido por você.
+We reserve the right to modify these Terms at any time. Updates take effect immediately upon posting. Significant changes will be communicated via email.
 
-6. Aceitação dos Termos
+6. Acceptance of Terms
 
-Ao usar o Pump, você declara que leu, entendeu e concordou em estar vinculado a estes Termos.`}
+By using TradeFast, you confirm that you have read, understood, and agree to be bound by these Terms.`}
         </pre>
       </div>
     </main>

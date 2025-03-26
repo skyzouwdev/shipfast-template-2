@@ -6,17 +6,30 @@ import TestimonialsAvatars from "./TestimonialsAvatars";
 const Hero = () => {
   return (
     <section className="max-w-7xl mx-auto bg-base-100 flex items-center justify-center flex-col gap-10 lg:gap-14 px-8 py-8 lg:py-20">
-      <div className="flex flex-col items-center justify-center text-center gap-20 lg:gap-24">
+      <div className="flex flex-col items-center justify-center text-center gap-10 lg:gap-16">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/skyz.png"
+            alt="Skyzouw logo"
+            width={50}
+            height={50}
+            className="w-12 h-12 rounded-full border border-base-200 shadow-sm"
+          />
+          <span className="text-lg font-semibold text-base-content/80">
+            by Skyzouw
+          </span>
+        </div>
         <div className="flex flex-col items-center lg:items-center gap-4 space-y-6">
           <h1 className="font-extrabold text-5xl lg:text-6xl tracking-tight md:-mb-4">
             Learn to trade{" "}
             <span className="relative inline-block">
               <span className="absolute inset-x-0 bottom-0 h-1 bg-primary transform scale-x-100 transition-transform duration-300 ease-out" />
-              <span className="relative z-10 text-primary">in weeks</span>
-            </span>{" "}
+              <span className="relative z-10 text-primary">in months</span>
+            </span>
+            ,{" "}
             <span className="relative inline-block">
               <span className="absolute inset-x-0 bottom-0 h-1 bg-base-100 transform scale-x-100 transition-transform duration-300 ease-out" />
-              <span className="relative z-10 ">,not months</span>
+              <span className="relative z-10 ">not years</span>
             </span>
           </h1>
           <p className="text-xl font-medium leading-relaxed">
